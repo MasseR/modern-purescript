@@ -20,6 +20,10 @@ The shell provides you with
 
 But notably it doesn't provide you with npm tooling.
 
+You will end up with empty dependencies at first but invoking
+`install-spago-style` will fill up your local environment with whatever is
+needed by spago (coming from nix?)
+
 You can have a live build environment either through a combination of `spago ide` + `parcel index.html` or `spago build --watch` + `parcel index.html`
 
 - https://github.com/purescript/spago
