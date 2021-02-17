@@ -31,6 +31,13 @@ You can have a live build environment either through a combination of `spago ide
 - https://github.com/justinwoo/easy-purescript-nix
 
 
+### Adding new dependencies
+
+- Modify spago.dhall
+- Run `spago2nix generate`
+- Run `direnv reload` (or start a new shell?)
+- Run `install-spago-style` to fill your local state
+
 ## Building "production" artifact
 
 The build is defined in the ci.nix. It uses the spago2nix generated nix packages.
